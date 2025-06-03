@@ -2,6 +2,8 @@
 
 _Get started using GitHub in less than an hour._
 
+After accepting this assignment, wait for GitHub actions to prepare the first task. The task will appear in the *issues* tab of this repository. If you don't see a new issue, please refresh the page after about 20 seconds.
+
 ## Welcome
 
 People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
