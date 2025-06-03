@@ -21,24 +21,18 @@ In this exercise, you will:
 
 ### How to start this exercise
 
-Simply copy the exercise to your account, then give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
-
-[![](https://img.shields.io/badge/Copy%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=skills&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=Exercise:+Introduction+to+GitHub&visibility=public)
+Simply accept the assignment following the instructions provided on your course. When you have accepted the assignment, give your favorite Octocat (Mona) **about 20 seconds** to prepare the first lesson, then **refresh the page**.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
 When copying the exercise, we recommend the following settings:
 
-- For owner, choose your personal account or an organization to host the repository.
-
-- We recommend creating a public repository, since private repositories will use Actions minutes.
-
 If the exercise isn't ready in 20 seconds, please check the [Actions](../../actions) tab.
 
 - Check to see if a job is running. Sometimes it simply takes a bit longer.
 
-- If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
+- If the page shows a failed job, please contact your teacher. Nice, you found a bug! 🐛
 
 </details>
 

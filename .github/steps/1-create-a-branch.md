@@ -26,30 +26,50 @@ GitHub shows your profile README at the top of your profile page. For more infor
 
 ![screenshot showing an example profile readme](https://github.com/user-attachments/assets/9425d1aa-04ba-459b-b89d-31fbae87c743)
 
-### :keyboard: Activity: Your first branch
 
-1. Open a new browser tab and navigate to your newly made repository (your copy of this exercise). Then, work on the steps in your second tab while you read the instructions in this tab.
+### :keyboard: Activity: Clone the repository
 
-2. Navigate to the **< > Code** tab in the header menu of your repository.
+Open your terminal or graphical Git client of your choice and clone this repository to your local machine.
 
-   ![screenshot highlighting the code tab](https://github.com/user-attachments/assets/8e1283ea-9cea-4a7e-8359-a7617734ff9a)
+```bash
+git clone https://github.com/YOUR-REPOSITORY-URL.git
+```
 
-3. Click on the **main** branch drop-down.
+> **Note:** Replace `YOUR-REPOSITORY-URL` with the URL of your repository. You can find this URL in the **Code** on GitHub.
 
-   <img width="300" alt="screenshot highlighting the branch selection" src="https://github.com/user-attachments/assets/1a07c958-cebf-4ca5-805e-22c1725635ba">
+After cloning the repository, navigate to the cloned directory:
 
-4. In the text box **Find or create a branch...**, enter `my-first-branch`.
-   
-   > **Note:** This is checked to continue with the next step. :wink: 
+```bash
+cd YOUR-REPOSITORY-NAME
+```
 
-5. Click the text **Create branch: `my-first-branch` from main** to create your branch.
-   
-   <img width="300" alt="screenshot highlighting the create branch prompt" src="https://github.com/user-attachments/assets/99d19ff5-4482-4210-ae45-84e7b7c47632">
+### :keyboard: Creating a branch
 
-   - The branch will automatically switch to the one you just created.
-   - The **main** branch drop-down menu will display your new branch name.
+The first step to contributing to a project is to create a branch. In this step, you will create a branch called `my-first-branch` to work on the project.
 
-6. Now that your branch is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
+Continue using the terminal or git client you used to clone the repository. Create a new branch named `my-first-branch` by running the following command:
+
+```bash
+git checkout -b my-first-branch
+```
+
+> **Note:** The `-b` flag tells Git to create a new branch and switch to it immediately. To move to an existing branch, leave out the `-b` flag and just use `git checkout my-first-branch`.
+
+
+### :keyboard: Pushing the branch to GitHub
+
+Now that you created the branch, it exists only in your local copy of the repository. Next, push the branch to GitHub so that others can see it and you can continue working on it.
+
+```bash
+git push -u origin my-first-branch
+```
+
+> **Note:** You have likely used `git push` before, but the rest of the command might be new. The `-u` flag sets the upstream branch for your local branch, which means that future `git push` commands will automatically push to this branch on GitHub. `origin` is the default name for the remote repository you cloned from, and `my-first-branch` is the name of the branch you just created. Later, you can simply use `git push` to push changes to this branch.
+
+
+### :tada: Wait for a minute and move to the next part of the exercise!
+
+Now that your branch is pushed to GitHub, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next lesson.
 
 
 <details>

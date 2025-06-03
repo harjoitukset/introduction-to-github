@@ -18,9 +18,20 @@ You successfully created a pull request. Now it's time to merge it!
 
    > **Tip:** Did you notice this dialog looks similar to adding a file? A merge is also a kind of commit!
 
-3. Once your branch has been merged, you don't need it anymore. To delete this branch, click **Delete branch**.
+3. Update the `main` branch on your local machine by running the following commands in your terminal:
 
-   ![screenshot showing delete branch button](https://github.com/user-attachments/assets/0fda948e-14e0-4643-aa53-d9f9f364cddd)
+   ```bash
+   # switch back to the local main branch
+   git checkout main
+   ```
+
+   At this point, your local `main` branch is behind the remote `main` branch, so it *does not* have the file you just added in your pull request. To update your local `main` branch, run:
+
+   ```bash
+   git pull
+   ```
+
+   > **Note:** If you are using a graphical Git client, you can use the equivalent commands to switch to the `main` branch and pull the latest changes.
 
 4. Now that your work is merged, Mona will confirm and share some final review content. Nice work! 🎉
 

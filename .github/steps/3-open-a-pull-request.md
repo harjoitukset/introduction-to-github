@@ -1,6 +1,6 @@
 ## Step 3: Open a pull request
 
-_Nice work making that commit! :sparkles:_
+_Nice work making that commit and pushing it! :sparkles:_
 
 Now that you have made a change to the project and created a commit, it’s time to share your proposed change through a pull request!
 
@@ -8,7 +8,7 @@ Now that you have made a change to the project and created a commit, it’s time
 
 ### :keyboard: Activity: Create a pull request
 
-You may have noticed after your commit that a message displayed indicating your recent push to your branch and providing a button that says **Compare & pull request**.
+You may have noticed in GitHub after your commit that a message displayed indicating your recent push to your branch and providing a button that says **Compare & pull request**.
 
 ![screenshot of message and button](https://github.com/user-attachments/assets/47b82c6e-d45b-4854-b8b4-1cb2c33af05f)
 
@@ -17,7 +17,7 @@ To create a pull request automatically, click **Compare & pull request** button,
 1. In the header menu of your repository, click the **Pull requests** tab .
 2. Click the **New pull request** button.
 3. Select the following branches using the dropdown menus.
-   
+
    - **base:** `main`
    - **compare:** `my-first-branch`
 
