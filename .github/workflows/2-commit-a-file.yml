@@ -113,3 +113,24 @@ jobs:
           gh workflow enable "Step 3"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  update_classroom_progress:
+    name: Update Classroom Progress
+    needs: [post_next_step_content]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update Classroom Progress
+      id: update-classroom-progress
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Update Classroom Progress
+        setup-command: ''
+        command: echo "File added successfully."
+        timeout: 1
+        max-score: 50
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        UPDATE-CLASSROOM-PROGRESS_RESULTS: "${{steps.update-classroom-progress.outputs.result}}"
+      with:
+        runners: update-classroom-progress

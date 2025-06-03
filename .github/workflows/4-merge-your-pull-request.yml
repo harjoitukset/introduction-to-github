@@ -74,13 +74,33 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  update_classroom_progress:
+    name: Update Classroom Progress
+    needs: [post_review_content]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update Classroom Progress
+      id: update-classroom-progress
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Update Classroom Progress
+        setup-command: ''
+        command: echo "Pull request created successfully"
+        timeout: 1
+        max-score: 100
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        UPDATE-CLASSROOM-PROGRESS_RESULTS: "${{steps.update-classroom-progress.outputs.result}}"
+      with:
+        runners: update-classroom-progress
+
   finish_exercise:
     name: Finish Exercise
     needs: [find_exercise, post_review_content]
     uses: skills/exercise-toolkit/.github/workflows/finish-exercise.yml@v0.4.0
     with:
       issue-url: ${{ needs.find_exercise.outputs.issue-url }}
-
 
   disable_workflow:
     name: Disable this workflow
