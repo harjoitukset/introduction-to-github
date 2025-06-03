@@ -38,6 +38,11 @@ If the exercise isn't ready in 20 seconds, please check the [Actions](../../acti
 
 </details>
 
+
+### About this exercise
+
+This exercise is a part of the [GitHub Skills](https://skills.github.com) program. It is designed to help you learn the basics of GitHub and how to contribute to projects. The exercise has been modified to be used in a course setting, so the instructions advise to use the command line over the GitHub web interface. GitHub classroom autograding has also been added to keep track of your progress.
+
 ---
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
