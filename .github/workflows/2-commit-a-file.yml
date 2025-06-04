@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - "my-first-branch"
+  workflow_dispatch:
 
 permissions:
   contents: read
