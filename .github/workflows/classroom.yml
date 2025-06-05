@@ -1,0 +1,35 @@
+name: Autograding
+
+on:
+    workflow_run:
+      workflows: ["Step 4"]
+      types:
+        - completed
+    workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+  issues: read
+
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Update Classroom Progress
+      id: update-classroom-progress
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Update Classroom Progress
+        setup-command: ''
+        command: echo "Exercise completed successfully"
+        timeout: 1
+        max-score: 100
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        UPDATE-CLASSROOM-PROGRESS_RESULTS: "${{steps.update-classroom-progress.outputs.result}}"
+      with:
+        runners: update-classroom-progress
